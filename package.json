@@ -1,0 +1,25 @@
+{
+  "name": "FlightsAPI",
+  "version": "1.0.0",
+  "description": "Flights API which uses a Postgres database",
+  "scripts": {
+    "start": "npm run babel-node -- index.js --PGHOST=$PGHOST --PGPORT=$PGPORT --PGUSER=$PGUSER --PGPASSWORD=$PGPASSWORD --PGDATABASE=$PGDATABASE",
+    "babel-node": "node node_modules/babel-cli/bin/babel-node.js --BABEL_DISABLE_CACHE=1"
+  },
+  "main": "index.js",
+  "author": "Dieter Van Hoof",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3",
+    "lodash": "^4.17.5",
+    "morgan": "^1.9.0",
+    "pg": "^7.4.1",
+    "uuid": "^3.2.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
+}
